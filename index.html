@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Gotham</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<svg class="grain" width="100%" height="100%">
+  <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/></filter>
+  <rect width="100%" height="100%" filter="url(#n)"/>
+</svg>
+
+<header>
+  <div class="brand">ARQUIVO <span>NOTURNO</span></div>
+  <a href="#preco" class="nav-cta">Ver pacote</a>
+</header>
+
+<section class="hero">
+  <div class="skyline">
+    <svg viewBox="0 0 1200 400" preserveAspectRatio="none">
+      <polygon points="0,400 0,220 40,220 40,180 80,180 80,240 130,240 130,140 170,140 170,260 230,260 230,190 280,190 280,230 330,230 330,120 380,120 380,250 430,250 430,200 480,200 480,270 540,270 540,150 590,150 590,240 650,240 650,100 700,100 700,260 760,260 760,210 820,210 820,170 870,170 870,250 930,250 930,190 990,190 990,230 1050,230 1050,140 1110,140 1110,270 1160,270 1160,220 1200,220 1200,400"
+        fill="#0d1119" stroke="rgba(234,231,221,0.04)" stroke-width="1"/>
+    </svg>
+  </div>
+  <div class="beam"></div>
+  <div class="hero-content">
+    <div class="eyebrow"><span class="dot"></span><span class="mono">Coleção original · Edição 01</span></div>
+    <h1>Papéis de parede para quem<br>vive na <em>penumbra</em> de Gotham.</h1>
+    <p>Um conjunto de artes autorais inspiradas na estética do Cavaleiro das Trevas — telhados molhados, neon frio e o facho de luz que corta a noite. Feito para telas, não para vitrines.</p>
+    <div class="hero-actions">
+      <a href="#preco" class="btn-primary">Ver as 42 artes</a>
+      <span class="hero-meta">Formato <b>4K</b> · Desktop e celular · Arquivo original, sem marca d'água</span>
+    </div>
+  </div>
+</section>
+
+<section id="arquivo">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="mono">Conteúdo do pacote</span>
+      <h2>Cada noite, um cenário diferente</h2>
+      <p>42 composições organizadas em seis atmosferas — da cobertura da torre ao beco encharcado. Nenhuma arte se repete, e cada uma vem em três proporções (desktop, celular e capa de bloqueio).</p>
+    </div>
+    <div class="case-grid">
+      <div class="case"><div class="case-art art-1"></div><div class="case-label"><span class="mono">Noite 01</span><div class="name">Cobertura da Torre</div></div></div>
+      <div class="case"><div class="case-art art-2"></div><div class="case-label"><span class="mono">Noite 02</span><div class="name">Sinal no Céu</div></div></div>
+      <div class="case"><div class="case-art art-3"></div><div class="case-label"><span class="mono">Noite 03</span><div class="name">Skyline Molhado</div></div></div>
+      <div class="case"><div class="case-art art-4"></div><div class="case-label"><span class="mono">Noite 04</span><div class="name">Beco 47</div></div></div>
+      <div class="case"><div class="case-art art-5"></div><div class="case-label"><span class="mono">Noite 05</span><div class="name">Holofote Central</div></div></div>
+      <div class="case"><div class="case-art art-6"></div><div class="case-label"><span class="mono">Noite 06</span><div class="name">Trilhos Elevados</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="bonus" style="border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="mono">O que mais vem junto</span>
+      <h2>Três bônus, sem enrolação</h2>
+    </div>
+    <div class="bonus-grid">
+      <div class="bonus-card">
+        <span class="num">Bônus 01</span>
+        <h3>Paleta extraída</h3>
+        <p>Os códigos de cor de cada arte, prontos para usar em ícones, temas de sistema ou outros projetos.</p>
+      </div>
+      <div class="bonus-card">
+        <span class="num">Bônus 02</span>
+        <h3>Recorte para ícones de app</h3>
+        <p>Versões quadradas das seis atmosferas principais, prontas para pastas de aplicativos e widgets.</p>
+      </div>
+      <div class="bonus-card">
+        <span class="num">Bônus 03</span>
+        <h3>Guia de instalação</h3>
+        <p>Passo a passo curto para configurar wallpaper dinâmico conforme o horário do dia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="preco">
+  <div class="wrap">
+    <div class="pricing">
+      <div class="pricing-left">
+        <span class="mono">Acesso único</span>
+        <h2>O arquivo completo, direto no seu dispositivo</h2>
+        <ul class="feature-list">
+          <li>42 wallpapers originais em 4K</li>
+          <li>Três proporções por arte (desktop, celular, bloqueio)</li>
+          <li>Paleta de cores + recorte para ícones</li>
+          <li>Download imediato, acesso permanente</li>
+        </ul>
+      </div>
+      <div class="pricing-right">
+        <div class="old-price">R$ 49,90</div>
+        <div class="new-price">R$ 24,90</div>
+        <div class="price-note">Pagamento único · sem assinatura</div>
+        <a href="#" class="btn-primary btn-block">Garantir o pacote</a>
+        <div class="guarantee-strip">
+          <span>Garantia 7 dias</span>
+          <span>Entrega imediata</span>
+          <span>Pagamento seguro</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="mono">Perguntas frequentes</span>
+      <h2>Antes de acessar o arquivo</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">Em que formato recebo as artes? <span class="plus">+</span></button>
+        <div class="faq-a">Todas as imagens vêm em JPG de alta resolução (4K), organizadas por pasta de atmosfera e por proporção de tela.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Funciona no celular e no computador? <span class="plus">+</span></button>
+        <div class="faq-a">Sim. Cada arte tem uma versão para tela de celular, uma para desktop e uma para tela de bloqueio.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">O acesso expira? <span class="plus">+</span></button>
+        <div class="faq-a">Não. O pagamento é único e o download fica disponível permanentemente para você.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Posso pedir reembolso? <span class="plus">+</span></button>
+        <div class="faq-a">Sim, você tem 7 dias corridos após a compra para solicitar o reembolso integral, sem perguntas.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-row">
+      <div class="brand">ARQUIVO <span>NOTURNO</span></div>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Contato</a>
+      </div>
+    </div>
+    <p class="disclaimer">Arquivo Noturno é um pacote de artes autorais e originais, inspirado na estética de heróis vigilantes noturnos. Não possui vínculo, licença ou afiliação com a DC Comics, Warner Bros. ou qualquer detentor de direitos do personagem Batman — trata-se de trabalho artístico independente.</p>
+    </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    item.querySelector('.faq-q').addEventListener('click',()=>{
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+      if(!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>
