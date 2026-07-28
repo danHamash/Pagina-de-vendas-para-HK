@@ -6,7 +6,7 @@
 <title> Gotham</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/styles.css">
 
 </head>
 <body>
@@ -20,6 +20,18 @@
   <div class="brand">ARQUIVO <span>NOTURNO</span></div>
   <a href="#preco" class="nav-cta">Ver pacote</a>
 </header>
+
+<main>
+
+  <div id="popup-compra" class="popup-compra">
+  <div class="popup-conteudo">
+    <div class="popup-icone"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#254e04" stroke="#254e04"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="##254e04" d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm-55.808 536.384-99.52-99.584a38.4 38.4 0 1 0-54.336 54.336l126.72 126.72a38.272 38.272 0 0 0 54.336 0l262.4-262.464a38.4 38.4 0 1 0-54.272-54.336L456.192 600.384z"></path></g></svg></div>
+    <div>
+      <strong id="popup-nome">Carlos</strong>
+      <p id="popup-texto">acabou de comprar este produto</p>
+    </div>
+  </div>
+</div>
 
 <section class="hero">
   <div class="skyline">
@@ -139,6 +151,9 @@
   </div>
 </section>
 
+</main>
+
+
 <footer>
   <div class="wrap">
     <div class="footer-row">
@@ -153,15 +168,7 @@
     </div>
 </footer>
 
-<script>
-  document.querySelectorAll('.faq-item').forEach(item=>{
-    item.querySelector('.faq-q').addEventListener('click',()=>{
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-      if(!isOpen) item.classList.add('open');
-    });
-  });
-</script>
+<script src="/enginner.js"></script>
 
 </body>
 </html>

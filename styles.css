@@ -65,6 +65,65 @@
   }
   .nav-cta:hover{border-color:var(--signal-dim);background:rgba(242,193,78,0.06);}
 
+  /*POP-UP*/
+  .popup-compra{
+  position:fixed;
+  left:20px;
+  bottom:20px;
+  z-index:9999;
+  background:rgba(89, 184, 31, 0.95);
+  color:#000;
+  padding:14px 16px;
+  border-radius:18px;
+  box-shadow:0 12px 30px rgba(0,0,0,.35);
+  max-width:320px;
+  transform:translateY(120%);
+  opacity:0;
+  transition:.45s ease;
+  font-family:inherit;
+}
+
+.popup-compra.show{
+  transform:translateY(0);
+  opacity:1;
+}
+
+.popup-conteudo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.popup-icone{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-size:20px;
+}
+
+.popup-compra strong{
+  display:block;
+  font-size:14px;
+  line-height:1.2;
+}
+
+.popup-compra p{
+  margin:2px 0 0;
+  font-size:13px;
+  color:#000;
+}
+
+@media (max-width:480px){
+  .popup-compra{
+    left:12px;
+    right:12px;
+    bottom:12px;
+    max-width:none;
+  }
+}
+
   /* HERO */
   .hero{
     position:relative;
