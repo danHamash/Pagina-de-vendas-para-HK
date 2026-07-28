@@ -109,7 +109,7 @@
   { nome: 'Jonas', cidade: 'Magé' },
   { nome: 'Adriana', cidade: 'Arapiraca' },
   { nome: 'Cauã', cidade: 'Ji-Paraná' },
-  { nome: 'Davi', cidade: 'Sinop' },
+  { nome: 'Davi', cidade: 'Angra dos Reis' },
   { nome: 'Ester', cidade: 'Rondonópolis' },
   { nome: 'Fabiana', cidade: 'Parauapebas' },
   { nome: 'Geovana', cidade: 'Castanhal' },
