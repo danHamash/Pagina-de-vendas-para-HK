@@ -4,6 +4,7 @@
     --steel: #121722;
     --steel-2: #1a2130;
     --fog: #5c6577;
+    --old_price: #c00000;
     --bone: #eae7dd;
     --signal: #f2c14e;
     --signal-dim: rgba(242,193,78,0.35);
@@ -292,7 +293,7 @@
     padding:36px;
     text-align:center;
   }
-  .old-price{color:var(--fog);text-decoration:line-through;font-size:1.1rem;}
+  .old-price{color:var(--old_price);text-decoration:line-through;font-size:1.1rem;}
   .new-price{font-family:'Oswald',sans-serif;font-size:3.2rem;color:var(--signal);margin:6px 0 4px;}
   .price-note{font-size:0.78rem;color:var(--fog);margin-bottom:26px;}
   .btn-block{display:block;width:100%;text-align:center;}
