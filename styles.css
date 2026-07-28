@@ -115,14 +115,6 @@
   color:#000;
 }
 
-@media (max-width:480px){
-  .popup-compra{
-    left:12px;
-    right:12px;
-    bottom:12px;
-    max-width:none;
-  }
-}
 
   /* HERO */
   .hero{
@@ -363,6 +355,14 @@
   .social-links{display:flex;gap:18px;font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.06em;}
   .social-links a{color:var(--fog);transition:color .2s;}
   .social-links a:hover{color:var(--signal);}
+  @media (max-width:480px){
+  .popup-compra{
+    left:12px;
+    right:12px;
+    bottom:12px;
+    max-width:none;
+  }
+}
 
   @media (max-width:860px){
     .case-grid{grid-template-columns:repeat(2,1fr);}
