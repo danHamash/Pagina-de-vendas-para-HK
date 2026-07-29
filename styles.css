@@ -30,6 +30,9 @@
     font-weight:600;
     line-height:1.05;
   }
+  margin-bt{
+    margin-bottom: 22px;
+  }
   .mono{
     font-family:'JetBrains Mono',monospace;
     letter-spacing:0.08em;
