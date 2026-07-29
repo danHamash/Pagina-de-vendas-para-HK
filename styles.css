@@ -214,7 +214,7 @@
     padding:16px 30px;
     margin: 0 auto;
     border-radius:2px;
-    display:inline-block;
+    display:flex;
     transition:transform .2s, box-shadow .2s;
     box-shadow:0 0 0 0 var(--signal-dim);
   }
