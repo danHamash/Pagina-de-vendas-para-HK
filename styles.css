@@ -134,31 +134,45 @@
       linear-gradient(180deg, #0d1119 0%, var(--ink) 55%, var(--ink) 100%);
   }
   .skyline svg{position:absolute;bottom:0;left:0;width:100%;height:62%;opacity:0.9;}
-  .beam{
-    position:absolute;
-    top:-20%;
-    left:50%;
-    width:2px;
-    height:130%;
-    transform-origin:top center;
-    background:linear-gradient(to bottom, rgba(242,193,78,0.55), rgba(242,193,78,0) 70%);
-    filter:blur(1px);
-    animation:sweep 9s ease-in-out infinite;
-    mix-blend-mode:screen;
-  }
-  .beam::before{
-    content:"";
-    position:absolute;
-    top:0;left:50%;
-    width:340px;height:340px;
-    transform:translate(-50%,-40%);
-    background:radial-gradient(circle, rgba(242,193,78,0.25), transparent 60%);
-    border-radius:50%;
-  }
-  @keyframes sweep{
-    0%,100%{transform:translateX(-38vw) rotate(-14deg);}
-    50%{transform:translateX(38vw) rotate(14deg);}
-  }
+
+  
+
+.beam-wrap{
+  position:absolute;
+  top:0;
+  left:50%;               /* igual ao logo_beam */
+  transform-origin:top center;
+  animation:sweep 9s ease-in-out infinite;
+}
+
+.beam{
+  position:absolute;
+  top:5rem;
+  left:55%;
+  transform:translateX(-50%);  /* centraliza o feixe no eixo do wrap */
+  width:80px;
+  height:90%;
+  background:linear-gradient(to bottom, rgba(242,193,78,0.55), rgba(242,193,78,0) 70%);
+  filter:blur(32px);
+  mix-blend-mode:screen;
+  z-index: 1;
+}
+
+.logo_beam{
+  position:absolute;
+  top:-2rem;
+  left:50%;
+  transform:translateX(-50%);  /* centraliza o logo, já que ele não gira mais */
+  width:260px;
+  filter:opacity(.5);
+  mix-blend-mode:screen;
+  z-index: 2;
+}
+
+@keyframes sweep{
+  0%,100%{ transform:translateX(-38vw) rotate(-14deg); }
+  50%{ transform:translateX(38vw) rotate(14deg); }
+}
   .hero-content{position:relative;z-index:2;padding:0 28px 90px;max-width:1120px;margin:0 auto;width:100%;}
   .eyebrow{
     display:flex;align-items:center;gap:10px;
