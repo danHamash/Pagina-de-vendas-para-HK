@@ -31,7 +31,10 @@
     line-height:1.05;
   }
   .margin-bt{
-    paddin-bottom: 22px;
+    margin-bottom: 22px;
+  }
+  .margin-tp{
+    margin-top: 22px;
   }
   .mono{
     font-family:'JetBrains Mono',monospace;
