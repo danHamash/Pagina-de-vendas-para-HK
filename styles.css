@@ -148,8 +148,8 @@
 .beam{
   position:absolute;
   top:5rem;
-  left:55%;
-  transform:translateX(-50%);  /* centraliza o feixe no eixo do wrap */
+  left:50%;
+  transform:translateX(calc(-50% + 15px)); /* desloca sem sair do eixo de giro */
   width:80px;
   height:90%;
   background:linear-gradient(to bottom, rgba(242,193,78,0.55), rgba(242,193,78,0) 70%);
@@ -161,8 +161,8 @@
 .logo_beam{
   position:absolute;
   top:-2rem;
-  left:50%;
-  transform:translateX(-50%);  /* centraliza o logo, já que ele não gira mais */
+  left:45%;
+  transform:translateX(calc(-50% + 15px)); /* desloca sem sair do eixo de giro */
   width:260px;
   filter:opacity(.5);
   mix-blend-mode:screen;
@@ -388,5 +388,20 @@
     .case-grid{grid-template-columns:1fr 1fr;}
     section{padding:76px 0;}
   }
+  @media (max-width: 768px){
+  .beam{
+    top:6rem;
+    left:50%;
+    width:50px;
+    height:90%;
+    filter:blur(20px);
+  }
+
+  .logo_beam{
+    left: 35%;
+    top:-1rem;
+    width:160px;
+  }
+}
 
   :focus-visible{outline:2px solid var(--signal);outline-offset:3px;}
