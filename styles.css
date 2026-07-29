@@ -170,7 +170,7 @@
   left:45%;
   transform:translateX(calc(-50% + 15px)); /* desloca sem sair do eixo de giro */
   width:260px;
-  filter:opacity(.5);
+  filter:opacity(.2);
   mix-blend-mode:screen;
   z-index: 2;
 }
