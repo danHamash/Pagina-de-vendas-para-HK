@@ -408,8 +408,18 @@
     width:160px;
   }
   .btn-primary{
-    display:flex;
     margin:0 auto;
+  }
+  .pricing{
+    padding: 1rem;
+  }
+  .pricing-right{
+    padding: 0;
+    background: none;
+    border: none;
+  }
+  .new-price{
+    font-size: 2rem;
   }
 }
 
