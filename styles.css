@@ -72,6 +72,28 @@
   }
   .nav-cta:hover{border-color:var(--signal-dim);background:rgba(242,193,78,0.06);}
 
+ /* Language*/
+ .lang-switcher{
+  display:flex;
+  gap:8px;
+}
+
+.lang-switcher button{
+  background:transparent;
+  border:1px solid var(--line);
+  color:var(--bone);
+  font-size:1.1rem;
+  padding:6px 10px;
+  cursor:pointer;
+  border-radius:6px;
+  transition:.2s;
+}
+
+.lang-switcher button:hover{
+  border-color:var(--signal);
+  transform:translateY(-1px);
+}
+
   /*POP-UP*/
   .popup-compra{
   position:fixed;
