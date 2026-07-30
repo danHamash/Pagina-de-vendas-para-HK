@@ -9,12 +9,19 @@ async function loadLanguage(lang) {
     const translations = await response.json();
 
     document.querySelectorAll('[data-i18n]').forEach(element => {
-      const key = element.dataset.i18n;
+  const key = element.dataset.i18n;
 
-      if (translations[key]) {
-        element.textContent = translations[key];
-      }
-    });
+  if (!translations[key]) return;
+
+  // Elementos que contêm HTML
+  const htmlKeys = ['hero_title', 'brand'];
+
+  if (htmlKeys.includes(key)) {
+    element.innerHTML = translations[key];
+  } else {
+    element.textContent = translations[key];
+  }
+});
 
     document.documentElement.lang = lang;
     localStorage.setItem('lang', lang);
