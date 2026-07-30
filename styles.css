@@ -36,6 +36,9 @@
   .margin-tp{
     margin-top: 22px;
   }
+  .margin-r{
+    margin-right: 22px;
+  }
   .mono{
     font-family:'JetBrains Mono',monospace;
     letter-spacing:0.08em;

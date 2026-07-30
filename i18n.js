@@ -24,11 +24,22 @@ async function loadLanguage(lang) {
   }
 }
 
+/* clique nas bandeiras */
+document.querySelectorAll('[data-lang]').forEach(button => {
+  button.addEventListener('click', () => {
+    loadLanguage(button.dataset.lang);
+  });
+});
+
+/* idioma do navegador */
 const browserLang = navigator.language.startsWith('es')
   ? 'es'
   : navigator.language.startsWith('en')
   ? 'en'
   : 'pt';
 
+/* idioma salvo ou navegador */
 const savedLang = localStorage.getItem('lang') || browserLang;
+
+/* inicia o site no idioma correto */
 loadLanguage(savedLang);
