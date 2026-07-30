@@ -228,23 +228,56 @@
   .section-head h2{font-size:clamp(1.8rem,4vw,2.6rem);}
   .section-head p{color:var(--fog);margin-top:16px;font-size:0.98rem;line-height:1.6;}
 
-  /* CASE GRID */
-  .case-grid{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:2px;
-    background:var(--line);
-    border:1px solid var(--line);
+/* CONTAINER VISÍVEL */
+.carousel{
+  width:800px;
+  margin:0 auto;
+  overflow:hidden;
+  border:1px solid var(--line);
+  position:relative;
+}
+
+/* FAIXA QUE SE MOVE */
+.case-track{
+  display:flex;
+  width:max-content;
+  animation:scroll-matrix 20s linear infinite;
+}
+
+/* CADA MATRIZ */
+.case-grid{
+  width:800px;
+  display:grid;
+  grid-template-columns:repeat(6, 1fr); /* 4 colunas */
+  
+  flex-shrink:0;
+  background:var(--line);
+}
+
+
+/* LOOP CONTÍNUO */
+@keyframes scroll-matrix{
+  from{
+    transform:translateX(0);
   }
+  to{
+    transform:translateX(-800px);
+  }
+}
+
+/* PAUSA AO PASSAR O MOUSE */
+.carousel:hover .case-track{
+  animation-play-state:paused;
+}
   .case{
     background:var(--steel);
-    aspect-ratio:3/4;
+    width: 132px;
+    height: 140px;
     position:relative;
     overflow:hidden;
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
-    padding:18px;
   }
   .case-art{position:absolute;inset:0;}
   .case-label{position:relative;z-index:2;}
@@ -385,12 +418,10 @@
   }
   }
   @media (max-width:860px){
-    .case-grid{grid-template-columns:repeat(2,1fr);}
     .bonus-grid{grid-template-columns:1fr;}
     .pricing{grid-template-columns:1fr;padding:32px;}
   }
   @media (max-width:560px){
-    .case-grid{grid-template-columns:1fr 1fr;}
     section{padding:76px 0;}
   }
   @media (max-width: 768px){
@@ -420,6 +451,9 @@
   }
   .new-price{
     font-size: 2rem;
+  }
+  .carousel{
+    width: 100%;
   }
 }
 
