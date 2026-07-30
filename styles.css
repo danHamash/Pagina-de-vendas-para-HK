@@ -446,6 +446,9 @@
     section{padding:76px 0;}
   }
   @media (max-width: 768px){
+    .lang{
+      display: none;
+    }
   .beam{
     top:6rem;
     left:50%;
