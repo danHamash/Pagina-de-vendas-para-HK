@@ -265,10 +265,6 @@
   }
 }
 
-/* PAUSA AO PASSAR O MOUSE */
-.carousel:hover .case-track{
-  animation-play-state:paused;
-}
   .case{
     background:var(--steel);
     width: 132px;
