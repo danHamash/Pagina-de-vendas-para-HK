@@ -50,3 +50,9 @@ const savedLang = localStorage.getItem('lang') || browserLang;
 
 /* inicia o site no idioma correto */
 loadLanguage(savedLang);
+document.querySelectorAll('.lang-switcher [data-lang]').forEach(button => {
+  button.addEventListener('click', () => {
+    const details = button.closest('.lang-switcher');
+    if (details) details.removeAttribute('open');
+  });
+});

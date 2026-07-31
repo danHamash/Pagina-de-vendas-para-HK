@@ -83,10 +83,10 @@
 
 .lang-switcher button{
   background:transparent;
-  border:1px solid var(--line);
+  border:none;
   color:var(--bone);
   font-size:1.1rem;
-  padding:6px 10px;
+  padding:2px 4px;
   cursor:pointer;
   border-radius:6px;
   transition:.2s;
@@ -95,6 +95,72 @@
 .lang-switcher button:hover{
   border-color:var(--signal);
   transform:translateY(-1px);
+}
+/* button mobile */
+.lang-switcher summary{
+  display:none;
+  list-style:none;
+  background:transparent;
+  border:1px solid var(--line);
+  color:var(--bone);
+  width:32px;
+  height:32px;
+  border-radius:6px;
+  cursor:pointer;
+  align-items:center;
+  justify-content:center;
+  font-size:1rem;
+}
+
+.lang-switcher summary::-webkit-details-marker{
+  display:none;
+}
+
+/* Desktop*/
+.lang-menu{
+  display:flex;
+  gap:8px;
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+  .lang-switcher{
+    position:relative;
+    display:block;
+  }
+
+  .lang-switcher summary{
+    display:flex;
+  }
+
+  /* menu fechado */
+  .lang-menu{
+    display:none;
+  }
+
+  /* menu aberto */
+  .lang-switcher[open] .lang-menu{
+    display:flex;
+    position:absolute;
+    top:48px;
+    right:0;
+    flex-direction:column;
+    gap:6px;
+    padding:6px;
+    background:#0b0f15;
+    border:1px solid var(--line);
+    border-radius:10px;
+    z-index:100;
+  }
+
+  .lang-switcher[open] .lang-menu button{
+    width:100%;
+    justify-content:flex-start;
+  }
+  .lang-switcher[open] .lang-menu button img{
+    width: 20px;
+  }
 }
 
   /*POP-UP*/
@@ -253,7 +319,7 @@
   .section-head h2{font-size:clamp(1.8rem,4vw,2.6rem);}
   .section-head p{color:var(--fog);margin-top:16px;font-size:0.98rem;line-height:1.6;}
 
-/* CONTAINER VISÍVEL */
+/* CONTAINER*/
 .carousel{
   width:800px;
   margin:0 auto;
@@ -262,14 +328,14 @@
   position:relative;
 }
 
-/* FAIXA QUE SE MOVE */
+/* movie*/
 .case-track{
   display:flex;
   width:max-content;
   animation:scroll-matrix 20s linear infinite;
 }
 
-/* CADA MATRIZ */
+/*card MATRIZ */
 .case-grid{
   width:800px;
   display:grid;
@@ -280,7 +346,7 @@
 }
 
 
-/* LOOP CONTÍNUO */
+/* LOOP*/
 @keyframes scroll-matrix{
   from{
     transform:translateX(0);
@@ -446,7 +512,7 @@
     section{padding:76px 0;}
   }
   @media (max-width: 768px){
-    .lang{
+    .nav-cta{
       display: none;
     }
   .beam{
