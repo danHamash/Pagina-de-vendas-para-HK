@@ -321,7 +321,7 @@
 
 /* CONTAINER*/
 .carousel{
-  width:800px;
+  width:100%;
   margin:0 auto;
   overflow:hidden;
   border:1px solid var(--line);
