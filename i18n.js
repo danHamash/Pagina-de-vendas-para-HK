@@ -1,3 +1,4 @@
+let currentTranslations = {};
 async function loadLanguage(lang) {
   try {
     const response = await fetch(`lang/${lang}.json`);
@@ -7,6 +8,7 @@ async function loadLanguage(lang) {
     }
 
     const translations = await response.json();
+    currentTranslations = translations;
 
     document.querySelectorAll('[data-i18n]').forEach(element => {
   const key = element.dataset.i18n;

@@ -98,7 +98,7 @@
 }
 /* button mobile */
 .lang-switcher summary{
-  display:none;
+  display:flex;
   list-style:none;
   background:transparent;
   border:1px solid var(--line);
@@ -113,7 +113,7 @@
 }
 
 .lang-switcher summary::-webkit-details-marker{
-  display:none;
+  display:flex;
 }
 
 /* Desktop*/
