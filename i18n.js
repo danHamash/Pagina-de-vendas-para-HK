@@ -1,9 +1,10 @@
 let currentTranslations = {};
 
+// #### Adicione os links reais aqui!!!
 const ctaLinks = {
-  pt: 'https://pokemondb.net/pokedex/pikachu',
-  es: 'https://pokemondb.net/pokedex/charmander',
-  en: 'https://pokemondb.net/pokedex/bulbasaur'
+  pt: '#',
+  es: '#',
+  en: '#'
 };
 
 async function loadLanguage(lang) {
