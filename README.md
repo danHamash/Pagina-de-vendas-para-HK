@@ -70,7 +70,7 @@ Este projeto é um exercício de design e front-end com **inspiração estética
 
 ## 👨‍💻 Autor
 
-**Carlos Daniel**
+**DanHamash** - **(Carlos Daniel)**
 
 ---
 
