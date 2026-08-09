@@ -332,7 +332,7 @@
 .case-track{
   display:flex;
   width:max-content;
-  animation:scroll-matrix 9s linear infinite;
+  animation:scroll-matrix 5s linear infinite;
 }
 
 /*card MATRIZ */
@@ -396,7 +396,28 @@
   .art-6{
     background:url(./capa/capa_6.jpeg);
   }
-  .art-1, .art-2, .art-3, .art-4, .art-5, .art-6{
+  .art-7{
+    background:url(./capa/capa_7.png);
+  }
+  .art-8{
+    background:url(./capa/capa_8.png);
+  }
+  .art-9{
+    background:url(./capa/capa_9.png);
+  }
+  .art-10{
+    background:url(./capa/capa_10.png);
+  }
+  .art-11{
+    background:url(./capa/capa_11.png);
+  }
+  .art-12{
+    background:url(./capa/capa_12.png);
+  }
+  .art-13{
+    background:url(./capa/capa_13.png);
+  }
+  .art-1, .art-2, .art-3, .art-4, .art-5, .art-6,.art-7,.art-8,.art-9,.art-10,.art-11,.art-12,.art-13{
     background-size: cover;
     border: 3px solid gray;
   }
