@@ -332,27 +332,27 @@
 .case-track{
   display:flex;
   width:max-content;
-  animation:scroll-matrix 5s linear infinite;
+  animation:scroll-matrix 30s linear infinite;
 }
 
 /*card MATRIZ */
 .case-grid{
   width:800px;
   display:grid;
-  grid-template-columns:repeat(6, 1fr); /* 4 colunas */
-  
+  grid-template-columns:repeat(8, 1fr); /* 4 colunas */
   flex-shrink:0;
   background:var(--line);
+  margin-right: 15rem;
 }
 
 
 /* LOOP*/
 @keyframes scroll-matrix{
   from{
-    transform:translateX(0);
+    transform:translateX(-120px);
   }
   to{
-    transform:translateX(-800px);
+    transform:translateX(-1020px);
   }
 }
 
