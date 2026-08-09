@@ -380,22 +380,22 @@
 
   /* individual art variations via css */
   .art-1{
-    background:url(./capa/CAPA-TESTE.png);
+    background:url(./capa/capa_1.jpeg);
   }
   .art-2{
-    background:url(./capa/CAPA-TESTE.png);
+    background:url(./capa/capa_2.jpeg);
   }
   .art-3{
-    background:url(./capa/CAPA-TESTE.png);
+    background:url(./capa/capa_3.jpeg);
   }
   .art-4{
-    background:url(./capa/CAPA-TESTE.png);
+    background:url(./capa/capa_4.jpeg);
   }
   .art-5{
-    background:url(./capa/CAPA-TESTE.png);
+    background:url(./capa/capa_5.jpeg);
   }
   .art-6{
-    background:url(./capa/CAPA-TESTE.png);
+    background:url(./capa/capa_6.jpeg);
   }
   .art-1, .art-2, .art-3, .art-4, .art-5, .art-6{
     background-size: cover;
@@ -407,7 +407,7 @@
     font-weight: 900;
     width: 100%;
     height: 100%;
-    background-color: #010a1d76;
+    background-color: #010a1d2d;
   }
   /* BONUS */
   .bonus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
