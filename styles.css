@@ -332,7 +332,7 @@
 .case-track{
   display:flex;
   width:max-content;
-  animation:scroll-matrix 20s linear infinite;
+  animation:scroll-matrix 9s linear infinite;
 }
 
 /*card MATRIZ */
