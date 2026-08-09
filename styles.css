@@ -373,7 +373,6 @@
   .case::after{
     content:"";
     position:absolute;inset:0;
-    background:linear-gradient(to top, rgba(9,11,16,0.92) 10%, rgba(9,11,16,0.1) 60%);
   }
   .case:hover .case-art{transform:scale(1.05);}
   .case-art{transition:transform .6s ease;}
