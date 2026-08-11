@@ -1,10 +1,8 @@
 let currentTranslations = {};
 
-// #### Adicione os links reais aqui!!!
+// Apenas espanhol
 const ctaLinks = {
-  pt: '#',
-  es: '#',
-  en: '#'
+  es: '#'
 };
 
 async function loadLanguage(lang) {
@@ -34,48 +32,30 @@ async function loadLanguage(lang) {
       }
     });
 
-      // 👇 COLE ESTE BLOCO AQUI
-const ctas = ['hero-cta', 'buy-cta'];
+    // Atualiza CTAs
+    const ctas = ['hero-cta', 'buy-cta'];
 
-ctas.forEach(id => {
-  const btn = document.getElementById(id);
+    ctas.forEach(id => {
+      const btn = document.getElementById(id);
 
-  if (btn && ctaLinks[lang]) {
-    btn.href = ctaLinks[lang];
-  }
-});
+      if (btn && ctaLinks.es) {
+        btn.href = ctaLinks.es;
+      }
+    });
 
-    // Atualiza idioma da página
-    document.documentElement.lang = lang;
+    // Define idioma da página
+    document.documentElement.lang = 'es';
 
-    // Salva escolha do usuário
-    localStorage.setItem('lang', lang);
+    // Salva sempre espanhol
+    localStorage.setItem('lang', 'es');
 
   } catch (error) {
     console.error('Erro ao carregar idioma:', error);
   }
 }
 
-// Botões de idioma
-document.querySelectorAll('[data-lang]').forEach(button => {
-  button.addEventListener('click', () => {
-    loadLanguage(button.dataset.lang);
+// Remove idioma salvo anteriormente
+localStorage.removeItem('lang');
 
-    // Fecha o acordeão no mobile
-    const details = button.closest('.lang-switcher');
-    if (details) details.removeAttribute('open');
-  });
-});
-
-// Idioma do navegador
-const browserLang = navigator.language.startsWith('es')
-  ? 'es'
-  : navigator.language.startsWith('en')
-  ? 'en'
-  : 'pt';
-
-// Idioma salvo ou detectado
-const savedLang = localStorage.getItem('lang') || browserLang;
-
-// Inicializa o site
-loadLanguage(savedLang);
+// Inicializa sempre em espanhol
+loadLanguage('es');
