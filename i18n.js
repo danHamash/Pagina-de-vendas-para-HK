@@ -2,7 +2,7 @@ let currentTranslations = {};
 
 // Apenas espanhol
 const ctaLinks = {
-  es: '#'
+  es: '#preco'
 };
 
 async function loadLanguage(lang) {
@@ -33,7 +33,7 @@ async function loadLanguage(lang) {
     });
 
     // Atualiza CTAs
-    const ctas = ['hero-cta', 'buy-cta'];
+    const ctas = ['hero-cta'];
 
     ctas.forEach(id => {
       const btn = document.getElementById(id);
