@@ -658,7 +658,7 @@ section {
   max-width: 1040px;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;           /* espaço entre os itens */
+  gap: 92px;           /* espaço entre os itens */
   justify-content: space-between; /* opcional */
 }
 .mais_container .mais_card{
@@ -693,6 +693,15 @@ section {
   height: 34px;
   stroke: #facc15; /* amarelo estilo Batman */
   stroke-width: 2.2;
+}
+.mais_section{
+  display: flex;
+  flex-direction: column;
+}
+.mais_button{
+display: flex; 
+justify-content: center; 
+margin-top: 4rem;
 }
 
 
@@ -877,6 +886,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .mais_section{
+  flex-direction: column-reverse;
+  margin-bottom: 2.5rem;
+}
   .btn-primary{
     margin: 0 auto;
     margin-bottom: 4rem;
