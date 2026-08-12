@@ -886,6 +886,7 @@ footer {
   }
   .mais_container{
     gap: 68px;
+    text-align: center;
   }
   .case-grid{
     grid-template-columns: repeat(8, 1fr); /* 4 colunas */
