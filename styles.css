@@ -655,7 +655,8 @@ section {
 /*Muito mais*/
 .mais_container{
   margin: 0 auto;
-  max-width: 1040px;
+  padding: 0 28px;
+  width: 1110px;
   display: flex;
   flex-wrap: wrap;
   gap: 92px;           /* espaço entre os itens */
