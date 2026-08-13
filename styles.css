@@ -899,6 +899,7 @@ footer {
     
   }
   .mais_container{
+    width: 100%;
     gap: 68px;
     text-align: center;
   }
