@@ -41,7 +41,7 @@ function mostrarPopup() {
 
   setTimeout(() => {
     popup.classList.remove('show');
-  }, 4000);
+  }, 1500);
 }
 
 // carrega o JSON e só então inicia os popups
