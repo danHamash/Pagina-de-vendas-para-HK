@@ -26,16 +26,33 @@
   "secure_payment": "Pago seguro",
   "faq_eyebrow": "Preguntas frecuentes",
   "faq_title": "Antes de acceder al archivo",
-  "faq1_q": "¿En qué formato recibo las imágenes?",
-  "faq1_a": "Todas las imágenes se entregan en JPG de alta resolución (4K), organizadas por atmósfera y proporción de pantalla.",
-  "faq2_q": "¿Funciona en móvil y ordenador?",
-  "faq2_a": "Sí. Cada ilustración tiene una versión para móvil, otra para escritorio y otra para pantalla de bloqueo.",
-  "faq3_q": "¿El acceso caduca?",
-  "faq3_a": "No. El pago es único y la descarga queda disponible permanentemente para ti.",
-  "faq4_q": "¿Puedo solicitar un reembolso?",
-  "faq4_a": "Sí, dispones de 7 días naturales después de la compra para solicitar el reembolso completo sin preguntas.",
+ 
+  "faq1_q": "¿Cómo pago en mi moneda?",
+  "faq1_a": "El valor se convertirá automáticamente a la moneda local en la página de pago.",
+
+  "faq2_q": "¿El pago es seguro?",
+  "faq2_a": "Sí. Todos los pagos se procesan a través de Hotmart, una plataforma multinacional segura.",
+
+  "faq3_q": "¿Puedo acceder desde mi celular?",
+  "faq3_a": "Sí. Biblioteca Geek funciona en celulares, tablets y computadoras.",
+
+  "faq4_q": "¿Ofrecen soporte si tengo alguna duda?",
+  "faq4_a": "Sí. Nuestro equipo está listo para ayudarte siempre que lo necesites.",
+  
+  "faq5_q": "¿Los cómics están en español?",
+  "faq5_a": "Sí. Todo el contenido está disponible para el público hispanohablante.",
+
+  "faq6_q": "¿La aplicación tiene acceso de por vida?",
+  "faq6_a": "Sí. Tu acceso es permanente.",
+
+  "faq7_q": "¿Necesito descargar la aplicación?",
+  "faq7_a": "Puedes descargar la aplicación de la forma habitual para tenerla en tu pantalla de inicio, o bien descargar los cómics en tu formato preferido para leerlos.",
+  
+  
+  
   "instagram": "Instagram",
   "tiktok": "TikTok",
   "contact": "Contacto",
+
   "footer_disclaimer": "Archivo Nocturno es un paquete de ilustraciones originales inspirado en la estética de héroes vigilantes nocturnos. No tiene vínculo, licencia ni afiliación con DC Comics, Warner Bros. ni con ningún titular de derechos del personaje Batman; se trata de una obra artística independiente."
 }

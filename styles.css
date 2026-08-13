@@ -922,10 +922,14 @@ footer {
   border-top: 1px solid var(--line);
   padding: 48px 0 60px;
 }
+.footer_image img{
+  width: 600px;
+  margin-bottom: 32px;
+}
 .footer-row {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 20px;
   align-items: center;
 }
