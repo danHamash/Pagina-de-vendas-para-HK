@@ -956,6 +956,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .footer_image img{
+  width: 300px;
+}
   .pricing-right h1{
   font-size: 1rem; 
   margin: 0.5rem 0;
