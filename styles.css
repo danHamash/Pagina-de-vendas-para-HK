@@ -737,6 +737,10 @@ margin-top: 4rem;
 }
 
 /* PRICING */
+.pricing-right h1{
+  font-size: 1rem; 
+  margin: 2rem 0;
+}
 .pricing {
   background: var(--steel);
   border: 1px solid var(--line);
@@ -771,6 +775,13 @@ margin-top: 4rem;
   height: 6px;
   background: var(--signal);
   flex-shrink: 0;
+}
+
+.price_image{
+  width: 220px;
+}
+.price_image img{
+  width: 100%;
 }
 .pricing-right {
   background: var(--ink);
@@ -941,13 +952,17 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .pricing-right h1{
+  font-size: 1rem; 
+  margin: 0.5rem 0;
+}
   .mais_section{
   flex-direction: column-reverse;
   margin-bottom: 2.5rem;
 }
   .btn-primary{
     margin: 0 auto;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-align: center;
     max-width: 250px;
     
