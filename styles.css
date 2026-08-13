@@ -616,7 +616,7 @@ section {
 .art-21,
 .art-22,
 .art-23,
-.art-24 {
+.art-24{
   background-size: cover;
   border: 3px solid gray;
 }
@@ -807,6 +807,59 @@ margin-top: 4rem;
   color: var(--fog);
   font-family: "JetBrains Mono", monospace;
   letter-spacing: 0.06em;
+}
+
+/*Prova social*/
+.case-track-social {
+  display: flex;
+  width: max-content;
+  animation: scroll-matrix-social 15s linear infinite;
+}
+.case-grid-social {
+  width: 260px;
+  display: grid;
+  gap: 10px;
+  margin-bottom: 10px;
+  grid-template-columns: repeat(12, 1fr); /* 4 colunas */
+  flex-shrink: 0;
+  background: var(--line);
+}
+
+.art-30 {
+  background: url(./prova_social/social.png);
+}
+.art-31 {
+  background: url(./prova_social/social-2.png);
+}
+.art-32 {
+  background: url(./prova_social/social-3.png);
+}
+.art-33 {
+  background: url(./prova_social/social.png);
+}
+.art-34 {
+  background: url(./prova_social/social-2.png);
+}
+.art-35 {
+  background: url(./prova_social/social-3.png);
+}
+.art-30,
+.art-31,
+.art-32,
+.art-33,
+.art-34,
+.art-35 {
+  background-size: cover;
+  border: 3px solid gray;
+}
+
+@keyframes scroll-matrix-social {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-400px);
+  }
 }
 
 /* FAQ */
