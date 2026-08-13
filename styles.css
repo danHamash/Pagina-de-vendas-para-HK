@@ -720,15 +720,14 @@ margin-top: 4rem;
   
 }
 .bonus_bg_1{
-  background: url(bonos-01.PNG);
+  background: url(/bonos/bonos-01.PNG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
-  
 }
 .bonus_bg_2{
-  background: url(bonos-02.PNG);
+  background: url(/bonos/bonos-02.PNG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
