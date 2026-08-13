@@ -665,6 +665,7 @@ section {
 .mais_container .mais_card{
   flex: 1 1 220px;   /* cresce, encolhe e tenta ter 250px */
   max-width: 250px;  /* opcional */
+  text-align: center;
 }
 .mais_icone{
   margin-bottom: 1rem;
