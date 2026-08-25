@@ -14,6 +14,17 @@
         src="https://www.facebook.com/tr?id=1427846522732154&ev=PageView&noscript=1"
       />
     </noscript>
+    <!-- VERCEL Clarity -->
+    <script>
+  fetch("https://tracke-utm-url.vercel.app/save-url", {
+    method: "POST", 
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      userId: "6a8dad4a0d10d4d9c26542cf",
+      url: window.location.href
+    }),
+  });
+</script>
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
       (function (c, l, a, r, i, t, y) {
